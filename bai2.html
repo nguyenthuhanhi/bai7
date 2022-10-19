@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Amount</td>
+
+        <td>From Currency</td>
+
+        <td>To Currency</td>
+        <td></td>
+    </tr>
+    <tr>
+       <td > <input type="text" id="dauvao"></td>
+        <td>
+            <select id="sl1" >
+                <option value="vietnam">VNĐ</option>
+                <option value="dola">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="sl2">
+                <option value="vietnam">VNĐ</option>
+                <option value="dola">USD</option>
+            </select>
+        </td>
+        <td>
+            <button onclick = "dosomething()"> Convert </button>
+        </td>
+    </tr>
+    <script>
+        function dosomething() {
+            let gtrivao = document.getElementById('dauvao').value;
+            let sl1= document.getElementById('sl1').value;
+            let sl2= document.getElementById('sl2').value;
+            if(sl1==sl2){
+                alert(gtrivao);
+            }
+            if (sl1 == "vietnam" && sl2 =="dola"){
+                alert(gtrivao/24000);
+            }
+            if(sl1=="dola" && sl2=="vietnam"){
+                alert(gtrivao*24000)
+            }
+        }
+    </script>
+</table>
+
+
+</body>
+</html>
