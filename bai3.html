@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="abc.com">
+<h2>Caculator</h2>
+    <input type="number" id ="a">
+    <input type="number" id ="b">
+    <br>
+    <button onclick="cong()">Addition(+)</button>
+    <button onclick="tru()">Subtraction(-)</button>
+    <button onclick="nhan()">Multiplication(x)</button>
+    <button onclick="chia()">Division(/)</button>
+</form>
+</body>
+<script>
+function cong() {
+    let a = +document.getElementById('a').value;
+    let b = +document.getElementById('b').value;
+    let phepcong = a+b;
+    alert(phepcong);
+}
+function tru() {
+    let a = +document.getElementById('a').value;
+    let b = +document.getElementById('b').value;
+    let pheptru = a-b;
+    alert(pheptru);
+}
+function nhan() {
+    let a = +document.getElementById('a').value;
+    let b = +document.getElementById('b').value;
+    let phepnhan = a*b;
+    alert(phepnhan);
+}
+function chia() {
+    let a = +document.getElementById('a').value;
+    let b = +document.getElementById('b').value;
+    let phepchia = a/b;
+    alert(phepchia);
+}
+
+</script>
+</html>
